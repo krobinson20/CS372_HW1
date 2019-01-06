@@ -4,6 +4,7 @@ private int day;
 private int month;
 private int year;
 
+    //PT -- constreuctors don't have return types. -3
 void DateClass()
 {
     day=1;
@@ -20,6 +21,7 @@ void DateClass(int a,int b, int c)
     }
     else
     {
+        //PT -- don't put output or input in a constructor. Just fail. -1
         while(b < 0 || b > 13) {
          System.out.println("That is not a valid month, please enter a new value: ");
         month = scnr.nextInt();
@@ -52,6 +54,7 @@ int Getyear()
 }
 void Setday(int a)
 {
+    //PT -- need to be smart here. -2
  day = a;
 }
 void Setmonth(int a)
@@ -70,6 +73,7 @@ void TodaysDate()
 
 void DaysinFuture(DateClass a, DateClass b)
 {
+    //PT -- be more efficient here. -1
     if(a.Getyear() == b.Getyear())
     {
         if(a.getmonth() == b.Getmonth())
