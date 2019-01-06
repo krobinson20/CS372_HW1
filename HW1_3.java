@@ -8,10 +8,11 @@ public class HW1_3{
 
         System.out.println("Enter a number: ");
         userinput = scnr.nextLine();
+        //PT -- why byte[]?
         byte [] usersstring= userinput.getBytes(); 
         
         
-      
+      //PT -- if (usersstring[0] < '0' || usersstring[0] > '9')
        if(usersstring[0] < 48 || usersstring[0] > 57)
        {
          System.out.println("You did not enter a number, please try again: ");
